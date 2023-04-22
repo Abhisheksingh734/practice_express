@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <form action="post">
+                Username:<input type="text" id="User">
+                Password:<input type="text" id="Pswd">
+                <input type="button" onclick="loginPage()">
+        </form>
+
+        <script>
+            const loginPage =()=>{
+                return(app.get('/login',(req,res)=>{
+    res.send('Hello')
+}))
+            }
+        </script>
+    </body>
+</html>
